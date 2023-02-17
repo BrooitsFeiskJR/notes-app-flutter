@@ -7,6 +7,15 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.grey[700],
+        onPressed: () => print("Press!"),
+        child: const Icon(
+          Icons.add_outlined,
+          color: Colors.white,
+          size: 25,
+        ),
+      ),
       backgroundColor: Colors.black,
       body: SafeArea(
         child: Padding(
